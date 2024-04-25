@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop - Contato</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background:  rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(140,66,65,1) 29%, rgba(181,86,74,1) 40%, rgba(203,97,79,1) 50%, rgba(225,107,83,1) 60%, rgba(228,108,84,1) 71%, rgba(230,109,84,1) 85%, rgba(238,113,86,1) 100%, rgba(0,212,255,1) 100%);
+
+
+        }
+        header{
+            background-color:#ee7156 ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            color: #ffff;
+            flex-wrap: wrap;
+            
+        }
+        nav, ul,li{
+            display: flex;
+            gap: 100px;
+           
+        }
+        li a{
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+        }
+        li a::after{
+            content: " ";
+            width: 0%;
+            height: 2px;
+            background-color: #e5f1f6;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 0.3s ease-in-out;
+            
+        }
+        li a:hover::after{
+            width: 100%;
+
+
+        }
+        main{
+           text-align: center;
+           margin: 10px 80px ;
+           font-size: 20px;
+           color: #fff;
+           height: 80vh;
+          
+           
+        }
+        form{
+            position: absolute;
+            left: 40%;
+            padding: 8px;
+            
+            border-radius: 10px;
+        }
+       
+        legend{
+            border: #208cb8 3px solid;
+            padding: 10px;
+            text-align: center;
+            background-color: #208cb8;
+            border-radius: 8px;
+        }
+        #submit{
+            
+            background: #e5f1f6;
+            width: 100%;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+            color: #000;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        footer{
+            background: #208cb8;
+        text-align: center;
+        padding: 20px;
+        color:#fff;
+       
+
+        }
+
+     
+    </style>
+        <!-- 
+
+        Esse é um exercício em HTML. 
+        Nesta página, você deve criar um cabeçalho, um conteúdo principal e um rodapé.
+        O cabeçalho deve conter um título e um menu de navegação com três links: Home, Loja e Contato.
+        O conteúdo principal deve conter uma seção com um título e um parágrafo.
+        O rodapé deve conter um parágrafo com o texto "© 2024 Petshop. Todos os direitos reservados.".
+
+        Adicione um formulário de contato com campos para nome, email, telefone e mensagem.
+
+    -->
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Entre em Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section>
+            <h2>Informações de Contato</h2>
+            <p>Entre em contato conosco para agendar serviços, tirar dúvidas ou fornecer feedback. Estamos aqui para ajudar!</p>
+            <p>Telefone: (XX) XXXX-XXXX</p>
+            <p>Email: contato@petshop.com</p>
+        </section>
+        <form action="for" class="formulario">
+           
+                <legend><b>Formulário Petshop</b></legend>
+                <p> Nome: <input type="text" name="nome" id="nome" required placeholder="Nome"></p>
+                <br>
+                <p> Email: <input type="email" name="email" id="email" required placeholder="Email"></p>
+                <br>
+                <p> Telefone: <input type="tel" name="tel" id="tel" required placeholder="Telefone"></p>
+                <br>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
+                <br>
+                <input type="submit" value="Enviar" id="submit">
+                
+
+            
+        </form>
+        
+
+        <!-- 
+
+            Adicionar um formulário de contato com campos para nome, email, telefone e mensagem.
+
+        -->
+    </main>
+
+    <footer>
+        <p>© 2024 Petshop. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Rodapé -->
+   
+</body>
+</html>

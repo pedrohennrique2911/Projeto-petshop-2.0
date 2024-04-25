@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop - Home</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background: #208cb8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            color: #ffff;
+            flex-wrap: wrap;
+            
+        }
+        nav, ul,li{
+            display: flex;
+            gap: 100px;
+           
+        }
+        li a{
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+        }
+        li a::after{
+            content: " ";
+            width: 0%;
+            height: 2px;
+            background-color: #e5f1f6;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 0.3s ease-in-out;
+            
+        }
+        li a:hover::after{
+            width: 100%;
+
+
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th{
+            border: 2px solid black;
+            text-align: center;
+            padding: 8px;
+            text-transform: uppercase;
+        }
+        .titulo{
+            background: #208cb8;
+            color: #e5f1f6;
+        
+            border-radius: 5px;
+           
+           
+            
+        }
+        main{
+           text-align: center;
+           margin: 10px 80px ;
+           font-size: 20px;
+           height: 80vh;
+          
+           
+        }
+     .titulo-table{
+        background: #ee7156;
+        border-radius: 5px;
+        color:#e5f1f6;
+     }
+     footer{
+        background: #208cb8;
+        text-align: center;
+        padding: 20px;
+        color:#fff;
+     }
+       
+
+    </style>
+    
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Bem-vindo ao Petshop!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section>
+            <div class="titulo">
+                <h2>Quem Somos</h2>
+            </div>
+           
+            <p>Somos uma loja especializada em produtos para animais de estimação. <br> Nossa missão é oferecer produtos de qualidade para deixar seu pet mais feliz e saudável.</p>
+        </section>
+        <section>
+            <div class="titulo">
+                <h2>Por que Escolher o Petshop?</h2>
+            </div>
+           
+            <p>Oferecemos uma grande variedade de produtos, <br> incluindo alimentos, brinquedos, coleiras, roupas e acessórios. <br> Além disso, temos uma equipe de profissionais treinados <br> para ajudar você a encontrar o que precisa para o seu pet.</p>
+        </section>
+        <div class="titulo-table">
+            <h2> Animais</h2>
+        </div>
+        
+        <table>
+            <tr>
+                <td> <b>Gato</b></td>
+                <td><b>Cachorro</b></td>
+                <td><b>Hamster</b></td>
+                <td><b>Pàssaros</b></td>
+                <tr>
+                <td><img src="img/cat.png" alt="Gato" width="80px"></td>
+                <td><img src="img/dog.png" alt="Cachorro" width=""></td>
+                <td><img src="img/hamster.png" alt="Hamster"></td>
+                <td><img src="img/bird.png" alt="Pássaro"></td>
+
+                
+            </tr>
+        </table>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Petshop. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
